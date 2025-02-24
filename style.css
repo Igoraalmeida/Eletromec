@@ -1,5 +1,5 @@
 body{
-    background-image:url(/img/banner-stihl.jpg);
+    
     font-family: Georgia;
     margin: 0;
     padding: 0;
@@ -7,10 +7,9 @@ body{
 .navigation{
     display: flex;
     justify-content: space-between;
-    /* margin: 0 8%; */
-    border-radius: 0%;
+    margin: 0 8%;
+    border-radius: 20%;
     opacity: 90%;
-    background-color: white;
 }
 .logo img{
     width: 25rem;
