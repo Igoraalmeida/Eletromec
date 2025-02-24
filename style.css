@@ -1,0 +1,31 @@
+body{
+    background-image:url(/img/banner-stihl.jpg);
+    font-family: Georgia;
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 8%; */
+    border-radius: 0%;
+    opacity: 90%;
+    background-color: white;
+}
+.logo img{
+    width: 25rem;
+}
+.icones{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-style: italic;    
+}
+.icones li{
+    display: inline-block;
+    margin: 0 1rem;
+    justify-content: center;
+}
+.banner img{
+    
+}
