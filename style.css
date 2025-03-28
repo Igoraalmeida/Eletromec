@@ -12,7 +12,7 @@ body{
     opacity: 90%;
 }
 .logo img{
-    width: 25rem;
+    width: 20rem;
 }
 .icones{
     display: flex;
@@ -25,6 +25,56 @@ body{
     margin: 0 1rem;
     justify-content: center;
 }
-.banner img{
+.icones-awesome{
+    /* border: 1px solid red; */
+    margin: 0 5px;
+    font-size: 15px;
+    transition: all .3s;
+    color: black;
+}
+.icones-awesome:hover{
+    transform: scale(1.1);
+}
+.banner{
+    background-image: url("/img/banner-stihl.jpg");
+    height: 60rem;
+    display: flex;
     
+}
+.banner-content{
+    color: black;
+    font-size: 30px;
+    background-color:rgba(255, 255, 255, 0.404);
+    width: 55%;
+    height: 35%;
+    margin: 12% 0 0 0;
+    opacity: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.banner-section{
+    margin: 0 0 0 5em;
+}
+.banner-section-title{
+    font-size: 38px;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.banner-section-text{
+    font-size: 18px;
+    font-style: italic;
+    
+    
+}
+.banner-section-button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 10em;
+    height: 3em;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 20px 0;
 }
