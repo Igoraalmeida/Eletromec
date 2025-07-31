@@ -1,80 +1,53 @@
 body{
-    
-    font-family: Georgia;
+    background-image: url(/img/);
+}
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 8%;
-    border-radius: 20%;
-    opacity: 90%;
+.total-margin{
+    margin: 0 5em;
 }
-.logo img{
-    width: 20rem;
+.logo{
+    width: 20em;
 }
-.icones{
-    display: flex;
+.container{
+    padding: 15px 0 0 0;
+    text-align: center;
     align-items: center;
-    font-size: 18px;
-    font-style: italic;    
 }
-.icones li{
+.nav-list{
+    padding: 15px 0 40px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.nav-list li{
+    margin: 0 20px;
+    letter-spacing: .03em;
     display: inline-block;
-    margin: 0 1rem;
-    justify-content: center;
-}
-.icones-awesome{
-    /* border: 1px solid red; */
-    margin: 0 5px;
-    font-size: 15px;
-    transition: all .3s;
+    transition: .5s ease;
+    border-bottom: 2px transparent solid;
     color: black;
 }
-.icones-awesome:hover{
-    transform: scale(1.1);
+.nav-list li:hover{
+    border-bottom: 2px #f4681781 solid;
+    border-radius: 3px;
 }
-.banner{
-    background-image: url("/img/banner-stihl.jpg");
-    height: 60rem;
-    display: flex;
-    
+.nav-links{
+    background-color: #f46817d2;
+    font-weight: 500;
 }
-.banner-content{
-    color: black;
-    font-size: 30px;
-    background-color:rgba(255, 255, 255, 0.404);
-    width: 55%;
-    height: 35%;
-    margin: 12% 0 0 0;
-    opacity: 100%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.links{
+    border: 1px solid red;
+    display: inline-block;
+    list-style: none;
 }
-.banner-section{
-    margin: 0 0 0 5em;
+.links li{ 
+    float: right;
 }
-.banner-section-title{
-    font-size: 38px;
-    font-style: italic;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.banner-section-text{
-    font-size: 18px;
-    font-style: italic;
-    
-    
-}
-.banner-section-button{
-    background-color: orangered;
-    color: white;
-    border: none;
-    width: 10em;
-    height: 3em;
-    font-size: 15px;
-    font-weight: bold;
-    font-style: italic;
-    margin: 20px 0;
+.fa-brands{
+    font-size: 20px;
+    border: 1px solid red;
 }
