@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, sans-serif;
 }
 .total-margin{
     margin: 0 5em;
@@ -17,15 +17,14 @@ body{
     animation: slideUp 1s ease-out forwards;
 }
 .container{
-    padding: 15px 0 0 0;
+    padding: 1.5rem 0 0 0;
     text-align: center;
     align-items: center;
 }
 .nav-list{
     padding: 15px 0 40px 0;
     font-weight: 500;
-    font-size: 20px;
-    
+    font-size: 1.125rem;
 }
 .nav-list li{
     margin: 0 20px;
@@ -49,9 +48,9 @@ body{
     list-style: none;
     display: inline-block;
     text-align: left;
+    /* font-size: 1rem; */
     margin: 0 100px 0 0;
     cursor: pointer;
-    /* transition: all .4s ease; */
     opacity: 0;
     transform: translateY(-100px);
     animation: slideUp 1s ease-out forwards;
@@ -63,7 +62,7 @@ body{
     }
   }
 .fa-brands, .fa-solid{
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 .col-1{
     float: left;
@@ -95,7 +94,9 @@ body{
     font-style: italic;
 }
 .banner{
+    width: 100%;
     height: 50em;
+    object-fit: cover;
 }
 .content-banner{
     position: relative;
@@ -107,7 +108,7 @@ body{
     transform: translate(-40%, -15%);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
     box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-    padding: 60px;
+    padding: 4.5rem;
     padding-left: 30%;
     border-radius: 8px;
     background-color: rgb(242, 243, 243);
@@ -115,11 +116,11 @@ body{
 }
 .banner-text h1{
     padding-bottom: .4em;
-    font-size: 30px;
+    font-size: 2rem;
     letter-spacing: 1.5px;
 }
 .banner-text p{
-    font-size: 20px;
+    font-size: 1.2rem;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.479);
 }
 .text-effect1{
@@ -132,12 +133,12 @@ body{
 .banner-button{
     display: inline-block;
     margin: 25px 0 0 0;
-    padding: 15px;
+    padding: .75rem;
     border-radius: 6px;
     background-color: #f46717;
     text-decoration: none;
     color: rgb(226, 226, 226);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
     transition: all .3s ease;
@@ -146,6 +147,142 @@ body{
     transform: scale(1.05);
     color: white;
 }
+.services h1{
+    margin: 2rem 0 5rem 0;
+    font-size: 2rem;
+}
+.services{
+    text-align: center;
+    margin: 5rem 15rem;
+}
+.service-list{
+    display: flex;
+    justify-content: space-around;
+}
+.service-item{
+    transition: all .3s ease;
+    margin: 0 5rem;
+}
+.service-item:hover{
+    transform: scale(1.1);
+    transform:translateY(-10%);
+    cursor: pointer;
+}
+.service-icon{
+    font-size: 3rem;
+    color: #f46717;
+    margin: 0 0 .8rem 0;
+}
+
+/*Modo Tablet*/
+@media (max-width: 1025px) {
+    .col-1{
+        float: left;
+        margin: 8px 15px 0 5px;
+    }
+    .col-2{
+        float: right;
+    }
+    .links:nth-child(1){
+        margin: 0px;
+    }
+    .links:nth-child(2){
+        margin: 0px ;
+    }
+    .links:nth-child(3){
+        margin: 0px ;
+    }
+    .links{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+    }
+    .banner-text{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        transform: translate(-40%, -15%);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        padding: 2rem;
+        padding-left: 30%;
+        border-radius: 8px;
+        background-color: rgb(242, 243, 243);
+        text-align: left;
+    }
+    .services{
+        margin: 0;
+    }
+    
+    .service-icon{
+        color: #f46717;
+    }
+}
 
 
-
+/*Modo Celular*/
+@media (max-width: 767px){
+    .nav-list{
+        padding: 15px 0 40px 0;
+        font-weight: 500;
+        font-size: 1.125rem;
+    }
+    .nav-list li{
+        margin: 1rem 0px;
+        letter-spacing: .03em;
+        display: block;
+        transition: all .5s ease;
+        border-bottom: 2px transparent solid;
+        color: black;
+    }
+    .nav-list li:hover{
+        
+        background-color: 2px #f46717 solid;
+        text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.37);
+    }
+    .nav-list a{
+        text-decoration: none;
+    }
+    .col-1{
+        float: left;
+        margin: 8px 15px 0 5px;
+    }
+    .col-2{
+        float: right;
+    }
+    .links:nth-child(1){
+        margin: 1rem 0;
+    }
+    .links:nth-child(2){
+        margin: 1rem 0;
+    }
+    .links:nth-child(3){
+        margin: 1rem 0;
+    }
+    .links{
+        margin: 1rem 0;
+        padding: 0;
+    }
+    .nav-links{
+        display: block;
+    }
+    .banner-text{
+        width: 100%;
+        top: 30%;
+        left: 40%;
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+    .service-list{
+        display: block;
+    }
+    .service-item{
+        margin: 2.5rem 0;
+    }
+    .service-icon{
+        color: #f46717;
+    }
+}
