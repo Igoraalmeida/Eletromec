@@ -218,12 +218,12 @@ body{
     color: white;
 }
 .services h1{
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 8rem 0;
     font-size: 2rem;
 }
 .services{
     text-align: center;
-    margin: 5rem 15rem;
+    margin: 6rem 15rem 8rem 15rem;
 }
 .service-list{
     display: flex;
@@ -232,6 +232,10 @@ body{
 .service-item{
     transition: all .3s ease;
     margin: 0 5rem;
+    box-shadow:
+    1px 80px 50px -10px #11111170,
+    1px -40px 50px -10px #1111112d;
+    padding: 7rem 3rem;
 }
 .service-item:hover{
     transform: scale(1.1);
@@ -241,7 +245,37 @@ body{
 .service-icon{
     font-size: 3rem;
     color: rgb(213, 35, 26);
-    margin: 0 0 .8rem 0;
+    margin: 0 0 1.1rem 0;
+}
+.description-destaque{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    background-color: #111111;
+    height: 20em;
+    padding: 0 10%;
+}
+.descriptions{
+    margin: 5rem 0;
+}
+.description{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: #111111;
+    height: 20em;
+    padding: 0 10%;
+}
+.description-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.description-text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
 /*Modo Tablet*/
