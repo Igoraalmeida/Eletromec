@@ -46,6 +46,7 @@ body{
     display: block;
     font-size: 1.1em;
     font-weight: bold;
+    font-style: italic;
 }
 .slogan img{
     margin-top: -3.5em ;
@@ -147,7 +148,12 @@ body{
 .links{
     color: rgba(0, 0, 0, 0.87);
     font-weight: 500;
+    text-decoration: none;
     transition: all .3s ease;
+}
+.links a{
+    text-decoration: none;
+    color: inherit;
 }
 .links:hover{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
