@@ -7,6 +7,9 @@ body{
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
 }
+.icone{
+    width: 2px
+}
 .total-margin{
     margin: 0 5em;
 }
@@ -220,6 +223,7 @@ body{
 .services h1{
     margin: 2rem 0 8rem 0;
     font-size: 2rem;
+    letter-spacing: .1rem;
 }
 .services{
     text-align: center;
@@ -229,6 +233,9 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.service-list p{
+    padding: .2em 0;
+}
 .service-item{
     transition: all .3s ease;
     margin: 0 5rem;
@@ -236,11 +243,18 @@ body{
     1px 80px 50px -10px #11111170,
     1px -40px 50px -10px #1111112d;
     padding: 7rem 3rem;
+    border-radius: 10px;
+}
+.service-item:active{
+    background-color: red;
 }
 .service-item:hover{
     transform: scale(1.1);
     transform:translateY(-10%);
     cursor: pointer;
+    color: white;
+    background-color: #111111;  
+    
 }
 .service-icon{
     font-size: 3rem;
@@ -249,33 +263,49 @@ body{
 }
 .description-destaque{
     display: grid;
-    grid-template-columns: 1fr .5fr;
+    grid-template-columns: 1fr .6fr;
     background-color: #111111;
-    height: 20em;
-    padding: 0 10%;
+    height: 25em;
+    text-align: right;
 }
+
 .descriptions{
     margin: 5rem 0;
 }
 .description{
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: .6fr 1fr;
     background-color: #111111;
-    height: 20em;
-    padding: 0 10%;
+    height: 25em;
+    
 }
 .description-img{
     justify-content: center;
     align-items: center;
     display: flex;
     color: white;
+    
 }
 .description-text{
     justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
     color: white;
+    padding: 0 0 0 15em;
+}
+.description-text h3{
+    font-size: 2.5em;
+    
+}
+.description-text p{
+    font-size: 1.2em;
+    padding: 1em 0;
+    width: 60%;
+    text-align: left;
+}
+.description-button{
+    width: fit-content;
+
 }
 
 /*Modo Tablet*/
