@@ -224,11 +224,15 @@ body{
     margin: 2rem 0 8rem 0;
     font-size: 2rem;
     letter-spacing: .1rem;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    border-radius: 0px;
 }
 .services{
     text-align: center;
     margin: 6rem 15rem 8rem 15rem;
 }
+
 .service-list{
     display: flex;
     justify-content: space-around;
@@ -244,6 +248,7 @@ body{
     1px -40px 50px -10px #1111112d;
     padding: 7rem 3rem;
     border-radius: 10px;
+    width: 100%;
 }
 .service-item:active{
     background-color: red;
@@ -307,6 +312,27 @@ body{
     width: fit-content;
 
 }
+.service-on-street{
+    background-color: rgba(177, 128, 68, 0.842);
+    margin: 0 10rem;
+    height: 40rem;
+    box-shadow: 10px 10px 20px 5px #11111170;
+}
+.on-street-text{
+    text-align: right;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 4rem;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium'
+}
+.on-street-subtext{
+    font-size: 1.5rem;
+    padding: 1rem 2rem 2rem 2rem;
+    font-family:'Franklin Gothic Medium';
+    list-style: none;
+    font-weight: bold;
+}
 
 /*Modo Tablet*/
 @media (max-width: 1025px) {
@@ -357,6 +383,21 @@ body{
     .service-icon{
         color: rgb(213, 35, 26);
     }
+    .service-item{
+        margin: 0 2rem;
+        padding: 6rem 3rem;
+    }
+    .description-text{
+        padding: 0 0 0 5em;
+    }
+    .description-text p{
+        width: 80%;
+        padding: 0em;
+    }
+    .service-on-street{
+        margin: 0 5rem;
+
+    }
 }
 
 
@@ -394,17 +435,29 @@ body{
         float: right;
     }
     .links:nth-child(1){
-        margin: 1rem 0;
+        border-left: 2px solid rgba(0, 0, 0, 0.212);
+        padding: .7rem .5rem;
     }
     .links:nth-child(2){
-        margin: 1rem 0;
+        margin-left: 0px ;
+        padding: .1rem .5rem;
+        border-right: 2px solid rgba(0, 0, 0, 0.212);        
     }
     .links:nth-child(3){
-        margin: 1rem 0;
+        margin-right: 10px ;
+        border-left: 2px solid rgba(0, 0, 0, 0.212);
+        padding: .7rem .5rem;
+    }
+    .links:nth-child(4){
+        margin-right: 10px ;
+        border-right: 2px solid rgba(0, 0, 0, 0.212);
+        padding: .1rem .5rem;
     }
     .links{
-        margin: 1rem 0;
-        padding: 0;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 500;
+        text-decoration: none;
+        transition: all .3s ease;
     }
     .nav-links{
         display: block;
@@ -424,5 +477,23 @@ body{
     }
     .service-icon{
         color: rgb(213, 35, 26);
+    }
+    .service-item{
+        transition: all .3s ease;
+        margin: 2em 8rem;
+        box-shadow:
+        1px 80px 50px -10px #11111170,
+        1px -40px 50px -10px #1111112d;
+        padding: 7rem 3rem;
+        border-radius: 10px;
+        width: auto;
+    }
+    .service-item:hover{
+        transform: scale(1.5);
+        transform:translateY(0%);
+        cursor: pointer;
+        color: white;
+        background-color: #111111;  
+        
     }
 }
